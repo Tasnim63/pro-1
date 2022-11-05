@@ -1,0 +1,52 @@
+.ServicesSection{
+    .service{
+        width: 95%;
+        height: 100%;
+        border-left: 1px solid #e03f3f33 ;
+        border-right: 1px solid #e03f3f33;
+        border-bottom: 1px solid #e03f3f33 ;
+        border-top: 8px solid #e03f3f33 ;
+        background-color: #805d9c33;
+        transition: all .4s ease-in-out;
+      
+        &:hover{
+            border-top: 8px solid #a05473 ;
+        }
+        @media screen and (max-width:1400px) {
+          width: 100%;
+margin-bottom: 1rem;
+        }
+        .service-content{
+            padding: 1rem;
+          .service-images{
+            width: 50px;
+          }
+            .s-title{
+                font-size: 1.6rem;
+                color:  #c9a2b2;
+                font-weight: 500;
+                position: relative;
+                padding-bottom: 1rem; 
+                margin: 1rem 0;
+                &::after{
+                   content: '';
+                   position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    width: 40%;
+                    height: 1px;
+                    background-color: #e03f3f33;
+                }
+            }
+        }
+    }
+}
+.services-container{
+    display: flex;
+   justify-content: space-between;
+    margin-top: 4rem;
+    @media screen and (max-width:1400px) {
+        flex-direction: column;
+      margin-bottom: 2rem;
+    }
+}

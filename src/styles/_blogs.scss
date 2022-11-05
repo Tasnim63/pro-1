@@ -1,0 +1,44 @@
+.BlogsPage {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2.5rem;
+  @media screen  and (max-width:1070px){
+    grid-template-columns: repeat(1 ,1fr);
+    
+}
+  .blog {
+    background-color: #9f77c033;
+    width: 100%;
+    padding: 1rem;
+overflow: hidden;
+    .blog-content {
+      overflow: hidden;
+      padding-bottom: 2rem;
+      img {
+        width: 100%;
+        transition: all 0.2s ease-in-out;
+        height: 250px;
+        object-fit: cover;
+        &:hover {
+          transform: scale(1.1);
+        }
+        padding-bottom: 2rem;
+      }
+      .blog-link{
+        color: inherit;
+        font-family: inherit;
+        text-decoration: none;
+        text-decoration: none;
+        font-size: 2rem;
+       padding-bottom: 2rem;
+       transition: all 0.4s ease-in-out;
+       &:hover{
+      color: rgb(248, 205, 212) ;
+       }
+      }
+    }
+  }
+}
+.b-title{
+  margin-bottom: 4rem;
+}
